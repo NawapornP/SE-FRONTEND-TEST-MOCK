@@ -4,8 +4,12 @@
 <button class="btn btn-primary"  id="btn1_1" >คลิกที่นี่ JS1.1</button>
 
 <!-- Coding JavaScript 1.1 here!!!! -->
-
-
+<script>
+    function displayName() {
+        alert("My name is 'Mail'");
+    }
+    document.getElementById('btn1_1').addEventListener('click', displayName);
+</script>
 
 <!-- Coding JavaScript 1.1 here!!!! -->
 <hr>
@@ -15,8 +19,16 @@
 - คลิกที่ปุ่ม "คลิกที่นี่ JS1.2" จะแสดงกล่องข้อความให้บันทึกข้อความ และแสดงจำนวนตัวอักษรในข้อความนั้น <br><br>
 
 <button class="btn btn-primary"  id="btn1_2"  >คลิกที่นี่ JS1.2</button>
+
 <!-- Coding JavaScript 1.2 here!!!! -->
 
-
+<script>
+    function inputText(){
+        let text = prompt("Please enter your words");
+        let charCount = text.length;
+        alert(` จำนวน Character ของ ${text}: ${charCount}` );
+    }
+    document.getElementById('btn1_2').addEventListener('click', inputText);
+</script>
 
 <!-- Coding JavaScript 1.2 here!!!! -->
